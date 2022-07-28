@@ -30,7 +30,13 @@
   <link href="{{url_for('static', filename='css/style.css') }}" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
 
   <!-- =======================================================
   * Template Name: iPortfolio - v3.7.0
@@ -60,6 +66,8 @@
           <a href="https://github.com/MVerma44" class="google-plus" target="_blank"><i class="bx bxl-github"></i></a>
           <a href="https://www.linkedin.com/in/mayank-v-946404131/" class="linkedin" target="_blank"><i
               class="bx bxl-linkedin"></i></a>
+          <a href="mailto:vmayank.921@gmail.com" class="linkedin" target="_blank"><i
+              class="bx bx-envelope"></i></a>
         </div>
       </div>
 
@@ -151,7 +159,6 @@
         <div class="row skills-content">
 
           <div class="col-lg-6" data-aos="fade-up">
-
             <div class="progress">
               <span class="skill">HTML /CSS /Flask <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
@@ -278,7 +285,12 @@
             </div>
           </div>
         </div>
+      </div>
 
+      <div class="resume_btn">
+        <button class="common btn btn-lg"
+          onClick="javascript:window.open('https://drive.google.com/file/d/1SJ8j-T6QNueOAUV34-Vv3aEzY1sTIJCW/view', '_blank');"
+          type="button" target>Resume</button>
       </div>
     </section><!-- End Resume Section -->
 
@@ -292,16 +304,14 @@
           <h2>Portfolio</h2>
 
           <section class="home">
-            <div class="home_container">
-              <div class="home_img">
-                <video width="540" height="380" controls autoplay>
-                  <source
-                    src="https://ik.imagekit.io/3q71ttwh2xv/12-49-46_R2UOGGSuC.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1658215422348"
-                    type="video/mp4">
-                </video>
+            <div class="home_container row">
+              <div class="home_img col-lg-6">
+                <video
+                  src="https://ik.imagekit.io/3q71ttwh2xv/12-49-46_R2UOGGSuC.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1658215422348"
+                  loop autoplay muted controls class="video"></video>
               </div>
- 
-              <div class="home_data">
+
+              <div class="home_data col-lg-6">
                 <h1 class="home_title">MedEasy</h1>
                 <!-- <p class="tagLine"><i>Get Your Notes Here!!</i></p> -->
                 <div class="home_description">
@@ -309,11 +319,46 @@
                   odit
                   voluptatum repellendus consectetur, id tempore aut.
                 </div>
-                <!-- <button>
-                  <a href="#" class="getStart_btn" style="text-decoration: none;">Get Started</a>
-                </button> -->
-                <a class="btn btn btn-primary btn-lgy" href="#" role="button">GitHub Repo</a>
-                <!-- <div class="text-center"><button type="submit">Send Message</button></div> -->
+                <button class="common btn btn-sm mybtn" type="button">GitHub Repo
+                </button>
+              </div>
+            </div>
+            <div class="home_container row">
+              <div class="home_img col-lg-6">
+                <video
+                  src="https://ik.imagekit.io/3q71ttwh2xv/12-49-46_R2UOGGSuC.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1658215422348"
+                  loop autoplay muted controls class="video"></video>
+              </div>
+
+              <div class="home_data col-lg-6">
+                <h1 class="home_title">MedEasy</h1>
+                <!-- <p class="tagLine"><i>Get Your Notes Here!!</i></p> -->
+                <div class="home_description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus minus repudiandae officia magni
+                  odit
+                  voluptatum repellendus consectetur, id tempore aut.
+                </div>
+                <button class="common btn btn-sm mybtn" type="button">GitHub Repo
+                </button>
+              </div>
+            </div>
+            <div class="home_container row">
+              <div class="home_img col-lg-6">
+                <video
+                  src="https://ik.imagekit.io/3q71ttwh2xv/12-49-46_R2UOGGSuC.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1658215422348"
+                  loop autoplay muted controls class="video"></video>
+              </div>
+
+              <div class="home_data col-lg-6">
+                <h1 class="home_title">MedEasy</h1>
+                <!-- <p class="tagLine"><i>Get Your Notes Here!!</i></p> -->
+                <div class="home_description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus minus repudiandae officia magni
+                  odit
+                  voluptatum repellendus consectetur, id tempore aut.
+                </div>
+                <button class="common btn btn-sm mybtn" type="button">GitHub Repo
+                </button>
               </div>
             </div>
           </section>
@@ -386,7 +431,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
+                <div><button type="submit" class="btn btn-danger">Send Message</button></div>
               </form>
             </div>
 
@@ -398,20 +443,21 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
+  <!-- <footer id="footer">
     <div class="container">
-      <!-- <div class="copyright">
+      <div class="copyright">
         &copy; Copyright <strong><span>iPortfolio</span></strong>
-      </div> -->
+      </div> 
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+         All the links in the footer should remain intact. 
+         You can delete the links only if you purchased the pro version. 
+         Licensing information: https://bootstrapmade.com/license/ 
+         Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ 
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> 
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </footer>-->
+  <!-- End  Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
