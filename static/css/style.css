@@ -218,7 +218,7 @@ a {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("img/me.jpeg") top center;
+  background: url("../img/me.jpeg") top center;
   background-size: 75vh 100vh;
   background-repeat: no-repeat;
 }
@@ -386,7 +386,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -475,6 +475,27 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.home{
+  padding-top: 3rem;
+  overflow: hidden;
+}
+.home_container{
+  height: calc(100vh - --header-height);
+  padding-left: 20px;
+}
+.home_title{
+  color: var(--dark-blue);
+  font-size: var(--large-font);
+  font-family: 'Baloo Bhai 2', cursive;
+}
+.home_container{
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -941,6 +962,9 @@ section {
   .breadcrumbs ol li {
     display: inline-block;
   }
+.home_data{
+  display: none;
+}
 }
 
 /*--------------------------------------------------------------

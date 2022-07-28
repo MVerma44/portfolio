@@ -28,6 +28,9 @@
 
   <!-- Template Main CSS File -->
   <link href="{{url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
   <!-- =======================================================
   * Template Name: iPortfolio - v3.7.0
@@ -78,7 +81,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Mayank Verma</h1>
-      <p>I'm a <span class="typed" data-typed-items="Data Enthusiast, Developer, Data Consultant"></span></p>
+      <p>I'm a <span class="typed" data-typed-items="Data Enthusiast, Developer, Data Analyst"></span></p>
     </div>
   </section><!-- End Hero -->
 
@@ -279,131 +282,49 @@
       </div>
     </section><!-- End Resume Section -->
 
+
+
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
       <div class="container">
 
         <div class="section-title">
           <h2>Portfolio</h2>
-        </div>
 
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <!-- <li data-filter="*" class="filter-active">All</li> -->
-              <!-- <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li> -->
-            </ul>
-          </div>
-        </div>
+          <section class="home">
+            <div class="home_container">
+              <div class="home_img">
+                <video width="540" height="380" controls autoplay>
+                  <source
+                    src="https://ik.imagekit.io/3q71ttwh2xv/12-49-46_R2UOGGSuC.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1658215422348"
+                    type="video/mp4">
+                </video>
+              </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <video controls autoplay muted width="700">
-              <source
-                src="https://ik.imagekit.io/3q71ttwh2xv/12-49-46_R2UOGGSuC.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1658215422348"
-                type="video/mp4">
-            </video>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <video controls autoplay muted width="700">
-              <source
-                src="https://ik.imagekit.io/3q71ttwh2xv/12-49-46_R2UOGGSuC.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1658215422348"
-                type="video/mp4">
-            </video>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{{ url_for('static', filename='img/portfolio/portfolio-3.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="{{ url_for('static', filename='img/portfolio/portfolio-3.jpg') }}"
-                  data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i
-                    class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <div class="home_data">
+                <h1 class="home_title">MedEasy</h1>
+                <!-- <p class="tagLine"><i>Get Your Notes Here!!</i></p> -->
+                <div class="home_description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus minus repudiandae officia magni
+                  odit
+                  voluptatum repellendus consectetur, id tempore aut.
+                </div>
+                <!-- <button>
+                  <a href="#" class="getStart_btn" style="text-decoration: none;">Get Started</a>
+                </button> -->
+                <a class="btn btn btn-primary btn-lgy" href="#" role="button">GitHub Repo</a>
+                <!-- <div class="text-center"><button type="submit">Send Message</button></div> -->
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{{ url_for('static', filename='img/portfolio/portfolio-4.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="{{ url_for('static', filename='img/portfolio/portfolio-4.jpg') }}"
-                  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i
-                    class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{{ url_for('static', filename='img/portfolio/portfolio-5.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="{{ url_for('static', filename='img/portfolio/portfolio-5.jpg') }}"
-                  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i
-                    class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{{ url_for('static', filename='img/portfolio/portfolio-6.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="{{ url_for('static', filename='img/portfolio/portfolio-6.jpg') }}"
-                  data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i
-                    class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{{ url_for('static', filename='img/portfolio/portfolio-7.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="{{ url_for('static', filename='img/portfolio/portfolio-7.jpg') }}"
-                  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i
-                    class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{{ url_for('static', filename='img/portfolio/portfolio-8.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="{{ url_for('static', filename='img/portfolio/portfolio-8.jpg') }}"
-                  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i
-                    class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{{ url_for('static', filename='img/portfolio/portfolio-9.jpg') }}" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="{{ url_for('static', filename='img/portfolio/portfolio-9.jpg') }}"
-                  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i
-                    class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
+          </section>
 
         </div>
-
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
+
+
+    <!-- End Portfolio Section -->
+
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
