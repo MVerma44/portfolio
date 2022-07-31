@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-import json
+from markupsafe import escape
 
 app = Flask(__name__)
 
