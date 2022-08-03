@@ -1,5 +1,4 @@
 <h1 align="center">Hi 👋, I'm Mayank Verma</h1>
-<br>
 <h3 align="center">A passionate Data Analyst.</h3>
 
 - 🔭 I’m currently working on **Hotel Booking Dashboard.**
